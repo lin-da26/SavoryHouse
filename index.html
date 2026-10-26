@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory House | Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#home" class="nav-logo">Savory House</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Savory House</h1>
+        <p>Good Food. Great Moments.</p>
+    </header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-label">WELCOME TO SAVORY HOUSE</p>
+
+        <h2>Fresh Flavours.<br>Unforgettable Moments.</h2>
+
+        <p class="hero-description">
+            Discover delicious meals, fresh ingredients,
+            and warm hospitality in every bite.
+        </p>
+
+        <a href="#menu" class="hero-btn">Explore Our Menu</a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80"
+            alt="Warm, welcoming restaurant interior">
+    </div>
+</section>
+
+<section id="menu" class="menu-section">
+    <div class="section-heading">
+        <p class="hero-label">FRESHLY PREPARED</p>
+        <h2>Our Popular Dishes</h2>
+        <p>Delicious food made with care and quality ingredients.</p>
+    </div>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+            <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                alt="Freshly prepared pizza">
+            <div class="menu-info">
+                <h3>Classic Pizza</h3>
+                <p>Fresh toppings, melted cheese, and a crispy crust.</p>
+                <span class="price">KES 850</span>
+                
+<button class="details-btn" onclick="showDishDetails('pizza')">
+    View Details
+</button>
+
+<p id="pizza-details" class="dish-details" hidden>
+    Our classic pizza is prepared with fresh toppings,
+    melted cheese, and a crispy crust. Demo price: KES 850.
+</p>
+
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                alt="Burger served with fresh ingredients">
+            <div class="menu-info">
+                <h3>Gourmet Burger</h3>
+                <p>A juicy burger with fresh vegetables and a soft bun.</p>
+                <span class="price">KES 650</span>
+                
+<button class="details-btn" onclick="showDishDetails('burger')">
+    View Details
+</button>
+
+<p id="burger-details" class="dish-details" hidden>
+    Enjoy a juicy burger made with fresh vegetables,
+    a soft bun, and delicious toppings. Demo price: KES 650.
+</p>
+
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
+                alt="Fresh and colourful salad">
+            <div class="menu-info">
+                <h3>Fresh Garden Salad</h3>
+                <p>A refreshing mix of greens and seasonal vegetables.</p>
+                <span class="price">KES 450</span>
+                
+<button class="details-btn" onclick="showDishDetails('salad')">
+    View Details
+</button>
+
+<p id="salad-details" class="dish-details" hidden>
+    A refreshing combination of leafy greens and seasonal
+    vegetables. Demo price: KES 450.
+</p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="about-image">
+        <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80"
+            alt="Beautifully presented food at a restaurant">
+    </div>
+
+    <div class="about-content">
+        <p class="hero-label">OUR STORY</p>
+
+        <h2>Good Food, Made With Passion</h2>
+
+        <p>
+            At Savory House, we believe that great food brings
+            people together. Our goal is to serve delicious meals
+            made with care, fresh ingredients, and attention to detail.
+        </p>
+
+        <p>
+            Whether you are meeting friends, enjoying a family meal,
+            or taking a break from a busy day, we want every visit
+            to feel special.
+        </p>
+
+        <a href="#contact" class="hero-btn">Get in Touch</a>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="section-heading">
+        <p class="hero-label">GET IN TOUCH</p>
+        <h2>We'd Love to Hear From You</h2>
+        <p>Have a question or planning a visit? Contact us today.</p>
+    </div>
+
+    <div class="contact-container">
+        
+<div class="reservation-form">
+    <h3>Reserve a Table</h3>
+    <p>Plan your next meal with us.</p>
+
+    <form id="reservationForm">
+        <label for="customerName">Your Name</label>
+        <input
+            type="text"
+            id="customerName"
+            name="customerName"
+            placeholder="Enter your name"
+            required>
+
+        <label for="customerEmail">Email Address</label>
+        <input
+            type="email"
+            id="customerEmail"
+            name="customerEmail"
+            placeholder="Enter your email"
+            required>
+
+        <label for="reservationDate">Reservation Date</label>
+        <input
+            type="date"
+            id="reservationDate"
+            name="reservationDate"
+            required>
+
+            
+<label for="reservationTime">Reservation Time</label>
+<select id="reservationTime" name="reservationTime" required>
+    <option value="">Choose a time</option>
+    <option value="08:00">8:00 AM</option>
+    <option value="10:00">10:00 AM</option>
+    <option value="12:00">12:00 PM</option>
+    <option value="14:00">2:00 PM</option>
+    <option value="16:00">4:00 PM</option>
+    <option value="18:00">6:00 PM</option>
+    <option value="20:00">8:00 PM</option>
+</select>
+
+
+        <label for="guestCount">Number of Guests</label>
+        <select id="guestCount" name="guestCount" required>
+            <option value="">Choose guests</option>
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5">5 guests</option>
+            <option value="6+">6 or more guests</option>
+        </select>
+
+        <button type="submit" class="hero-btn">
+            Request Reservation
+        </button>
+
+        <p id="reservationMessage" role="status" aria-live="polite"></p>
+    </form>
+</div>
+
+        <div class="contact-card">
+            <h3>Visit Us</h3>
+            <p>Come and enjoy a delicious meal with us.</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Call Us</h3>
+            <p>Contact our team for enquiries and reservations.</p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Opening Hours</h3>
+            <p>Monday – Sunday</p>
+            <p>8:00 AM – 10:00 PM</p>
+        </div>
+    </div>
+
+    
+<a
+    href="https://wa.me/254712345678?text=Hello%20Savory%20House%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+    class="hero-btn"
+    target="_blank"
+    rel="noopener noreferrer">
+    Contact Us on WhatsApp
+</a>
+
+</section>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <h2>Savory House</h2>
+        <p>Good Food. Great Moments.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Savory House. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" type="button"
+    aria-label="Back to top">
+    ↑
+</button>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
