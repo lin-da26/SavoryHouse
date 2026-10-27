@@ -499,3 +499,14 @@ z-index: 1000;
     background-color: #C49A52;
     transform: translateY(-3px);
 }
+.demo-notice {
+    max-width: 600px;
+    margin: 25px auto 0;
+    padding: 15px 20px;
+    border-left: 4px solid #C49A52;
+    background-color: #FFFFFF;
+    color: #555555;
+    line-height: 1.7;
+    text-align: left;
+    border-radius: 4px;
+}
